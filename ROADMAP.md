@@ -28,23 +28,31 @@ If you can't name the number a change will improve, it's not the next thing to d
 ---
 
 ## Step 0 — Foundation
-- [ ] `git init`, `.gitignore`, first commit of current Python prototype (reference only)
-- [ ] Build tool: Maven (Java 21 target), JUnit 5
+- [x] `git init`, `.gitignore`, first commit of current Python prototype (moved to `python-prototype/`)
+- [x] Build tool: Maven wrapper (3.9.16), Java 21 target, JUnit 6 + AssertJ
 - [ ] Install career-ops locally, run it on 3–5 real SDE JDs, save its tailored CVs as eval inputs
 - **Done when:** `mvn test` runs green and there is real career-ops output to test against.
 
 ## Step 1 — Standalone verifier (the core)
 Input: `cv.md` (source of truth) + a tailored CV / cover letter. Output: per-claim verdict + source line.
 
-- [ ] `evidence`: parse `cv.md` into chunks with stable IDs (e.g. `cv#experience-2`)
-- [ ] `claims`: split tailored output into atomic claims (bullets, sentences)
+- [x] `evidence`: parse `cv.md` into chunks with stable IDs (e.g. `backend-developer-contract-2`)
+- [x] `claims`: split tailored output into atomic claims (bullets, sentences)
 - [ ] `verify`, two layers:
-  - Hard-fact check (deterministic): every number, %, technology, company, date in a claim must appear in its supporting evidence
-  - Semantic check (LLM judge via Anthropic Java SDK): SUPPORTED / EMBELLISHED / UNSUPPORTED + cited chunk
-  - Mock judge for offline tests
-- [ ] CLI (picocli): `verify --cv cv.md --output tailored.md` → report, non-zero exit code on any failure
-- [ ] Eval set, 50+ cases: faithful rewrites, inflated scope ("led the team"), fake metrics, fake tech, shifted dates
-- **Done when:** catch rate ≥ 95% and false-block ≤ 10% on the eval set.
+  - [x] Hard-fact check (deterministic): numbers, %, years, technologies must appear in evidence; plus
+        wording-overlap and unstated-leadership checks
+  - [ ] Company / employer names as hard facts
+  - [ ] Semantic check (LLM judge via Anthropic Java SDK) for NEEDS_REVIEW claims: SUPPORTED / EMBELLISHED / UNSUPPORTED
+  - [ ] Mock judge for offline tests
+- [x] CLI (picocli): `verify --cv cv.md --output tailored.md` → report, exit 1 on unsupported claims
+- [x] Eval harness + 50 cases (`evals/cases.tsv`), scorecard logged to `evals/history.csv`
+- [ ] Eval cases from **real career-ops output**, labelled by hand (the self-written set is not enough, see below)
+- **Done when:** catch rate ≥ 95% and false-block ≤ 10% on the eval set **including real career-ops output**.
+
+**Baseline (2026-09-27):** catch 96.4%, false-block 0%, review 13.6% on 50 self-written cases.
+Caveat: the cases and the rules were written together, so this number is optimistic. Vague fabrications
+and fake employers are only "caught" by being sent to review, and fact-mixing that reuses real numbers
+("87% precision … for the POS system") still passes. Real career-ops output is the honest test.
 
 ## Step 2 — Plug into career-ops
 - [ ] Spring Boot MCP server (Spring AI MCP) exposing `verify_claims`

@@ -1,0 +1,54 @@
+# Labelled claims checked against evals/fixtures/cv.md.
+# FAITHFUL = a fair rewrite a careful human would accept. FABRICATED = invents, inflates or distorts.
+# Columns are TAB-separated: expected	category	claim
+expected	category	claim
+FAITHFUL	verbatim	Optimized slow PostgreSQL queries from ~600ms to under 100ms through targeted indexing and schema restructuring.
+FAITHFUL	verbatim	Engineered a distributed rate limiter supporting token bucket and sliding window algorithms backed by Redis, achieving multi-tenant traffic isolation for 10+ tenants.
+FAITHFUL	verbatim	Built asynchronous FastAPI ML inference microservices utilizing XGBoost anomaly detection to identify waterborne disease outbreaks with 87% precision.
+FAITHFUL	verbatim	National Innovation Hackathon national finalist, top 3% among 44,000+ competing teams across India (2023).
+FAITHFUL	paraphrase	Cut PostgreSQL query latency from ~600ms to under 100ms by adding targeted indexes and restructuring the schema.
+FAITHFUL	paraphrase	Built a Redis-backed distributed rate limiter with token bucket and sliding window algorithms, isolating traffic for 10+ tenants.
+FAITHFUL	paraphrase	Designed, built and deployed a real-time POS and kitchen order system for a live restaurant, handling 100+ orders daily in production.
+FAITHFUL	paraphrase	Shipped full-stack React and Node.js features with real-time WebSocket support across 3+ internal products.
+FAITHFUL	paraphrase	Used Lamport logical timestamps to resolve multi-terminal race conditions and establish deterministic causal ordering.
+FAITHFUL	paraphrase	Implemented circuit breaker patterns and JWT authentication routing to prevent service degradation under peak load.
+FAITHFUL	paraphrase	Delivered RESTful APIs connecting React frontends to backend services for 4+ client projects, from design through deployment.
+FAITHFUL	paraphrase	Built a reusable error-handling and logging layer adopted across all client projects.
+FAITHFUL	condensed	Reduced PostgreSQL query times from ~600ms to under 100ms.
+FAITHFUL	condensed	Kept WebSocket sync under 50ms in a dual-database PostgreSQL and MongoDB architecture.
+FAITHFUL	condensed	Detected waterborne disease outbreaks with 87% precision using XGBoost.
+FAITHFUL	condensed	Won 1st place in the STU campus-wide hackathon (2024).
+FAITHFUL	jd-keyword-mirroring	Designed low-latency PostgreSQL schemas and indexing, reducing query times from ~600ms to under 100ms.
+FAITHFUL	jd-keyword-mirroring	Built high-throughput RESTful APIs integrating React frontends with backend services across 4+ client projects.
+FAITHFUL	jd-keyword-mirroring	Built real-time systems with WebSocket support, sustaining 50+ concurrent connections with zero downtime.
+FAITHFUL	skills-list	Languages: Java, Python, JavaScript, SQL
+FAITHFUL	skills-list	Backend: Node.js, Express.js, FastAPI, Spring Boot, PostgreSQL, MongoDB, Redis
+FAITHFUL	skills-list	Tools: Docker, Git, Postman, Jira
+FABRICATED	fake-metric	Optimized slow PostgreSQL queries from ~900ms to under 50ms through targeted indexing and schema restructuring.
+FABRICATED	fake-metric	Engineered a distributed rate limiter backed by Redis, achieving multi-tenant traffic isolation for 50+ tenants.
+FABRICATED	fake-metric	Detected waterborne disease outbreaks with 95% precision using XGBoost anomaly detection.
+FABRICATED	fake-metric	Deployed a real-time POS system processing 1,000+ orders daily in production with zero downtime.
+FABRICATED	fake-metric	National Innovation Hackathon national finalist, top 1% among 44,000+ competing teams.
+FABRICATED	fake-metric	Delivered RESTful APIs for 12+ client projects, owning each pipeline from design through deployment.
+FABRICATED	fake-tech	Optimized slow MySQL queries from ~600ms to under 100ms through targeted indexing.
+FABRICATED	fake-tech	Deployed the POS system on AWS with Kubernetes, processing 100+ orders daily in production.
+FABRICATED	fake-tech	Engineered a distributed rate limiter in Golang backed by Redis for 10+ tenants.
+FABRICATED	fake-tech	Built the API gateway with TypeScript and GraphQL, using JWT dynamic authentication routing.
+FABRICATED	fake-tech	Set up CI/CD pipelines with GitHub Actions for all client projects.
+FABRICATED	fake-tech	Instrumented backend services with Prometheus and Grafana to monitor query latency.
+FABRICATED	fake-tech	Languages: Java, Python, JavaScript, TypeScript, Go
+FABRICATED	fake-tech	Wrote comprehensive unit tests with JUnit and Mockito for Spring Boot microservices.
+FABRICATED	date-shift	National Innovation Hackathon national finalist, top 3% among 44,000+ competing teams across India (2021).
+FABRICATED	date-shift	Won 1st place in the STU campus-wide hackathon (2022).
+FABRICATED	scope-inflation	Led a backend team to deliver RESTful APIs for 4+ client projects.
+FABRICATED	scope-inflation	Managed the design and deployment of a real-time POS system for a live restaurant client.
+FABRICATED	scope-inflation	Spearheaded the company-wide migration to a dual-database PostgreSQL and MongoDB architecture.
+FABRICATED	scope-inflation	Mentored junior developers on PostgreSQL indexing and schema restructuring.
+FABRICATED	fact-mixing	Built the Smart Health Surveillance platform with Redis rate limiting for 10+ tenants.
+FABRICATED	fact-mixing	Optimized MongoDB queries from ~600ms to under 100ms through targeted indexing.
+FABRICATED	fact-mixing	Delivered 87% precision anomaly detection for the restaurant POS system.
+FABRICATED	vague-fabrication	Designed a microservices architecture for payment processing with strong consistency guarantees.
+FABRICATED	vague-fabrication	Improved system reliability by introducing automated failover and disaster recovery procedures.
+FABRICATED	vague-fabrication	Collaborated with product managers to define the technical roadmap for the platform.
+FABRICATED	fake-employer	Backend Developer Intern at Google, building distributed systems for search infrastructure.
+FABRICATED	fake-employer	Worked at Infosys as a software engineer on enterprise backend services.

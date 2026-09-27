@@ -1,0 +1,121 @@
+# Named technologies checked as hard facts. Format: Canonical|alias|alias
+# Prefix a name with = to match it case-sensitively (use for names that are also English words).
+
+# Languages
+=Java
+JavaScript|JS
+TypeScript
+Python
+Golang|=Go lang
+=Rust
+Kotlin
+=Swift
+C++|CPP
+C#|=C Sharp
+Scala
+Ruby
+PHP
+Elixir
+Haskell
+SQL
+Bash|Shell scripting
+
+# Backend frameworks
+Spring Boot|SpringBoot
+=Spring
+Hibernate
+Node.js|NodeJS|=Node
+Express.js|ExpressJS
+NestJS|Nest.js
+FastAPI
+Django
+Flask
+Ruby on Rails|=Rails
+.NET|ASP.NET
+gRPC
+GraphQL
+Kafka|Apache Kafka
+RabbitMQ
+WebSockets|WebSocket|Socket.IO
+JWT|JSON Web Token
+OAuth|OAuth2
+
+# Frontend
+=React|React.js|ReactJS
+React Native
+Next.js|NextJS
+Angular
+Vue|Vue.js
+Svelte
+Tailwind|Tailwind CSS
+Redux
+
+# Databases & storage
+PostgreSQL|Postgres
+MySQL
+MongoDB|Mongo
+MongoDB Atlas
+Redis
+Cassandra
+DynamoDB
+Elasticsearch
+SQLite
+Oracle Database|Oracle DB
+Prisma
+pgvector
+
+# Cloud & infra
+AWS|Amazon Web Services
+GCP|Google Cloud|Google Cloud Platform
+Azure|Microsoft Azure
+Docker
+Kubernetes|K8s
+Terraform
+Ansible
+Jenkins
+GitHub Actions
+GitLab CI
+CI/CD
+Nginx
+Linux
+AWS Lambda
+
+# Observability
+Prometheus
+Grafana
+OpenTelemetry
+Datadog
+ELK|Kibana|Logstash
+
+# Testing
+JUnit
+Mockito
+Jest
+Mocha
+PyTest
+Selenium
+Cypress
+Playwright
+Postman
+
+# Data & ML
+XGBoost
+TensorFlow
+PyTorch
+scikit-learn|sklearn
+Pandas
+NumPy
+Spark|Apache Spark
+Hadoop
+
+# Tools & services
+=Git
+GitHub
+Jira
+Notion
+Google Colab
+Twilio
+Nodemailer
+Stripe
+Firebase
+Supabase

@@ -1,0 +1,2 @@
+timestamp,cases,catch_rate,false_block_rate,review_rate,note
+2026-09-27T15:04:08,50,0.964,0.000,0.136,"baseline: deterministic facts + overlap + leadership check"
