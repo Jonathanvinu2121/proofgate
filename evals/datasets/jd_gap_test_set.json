@@ -1,0 +1,32 @@
+[
+  {
+    "id": "GAP-TEST-1",
+    "company": "CloudTech Systems",
+    "jd": "Senior Backend Infrastructure Engineer required. Stack: Python, FastAPI, Docker, and AWS (EC2, S3, CloudWatch). Must have 3+ years AWS production experience.",
+    "expected_gaps": ["AWS"]
+  },
+  {
+    "id": "GAP-TEST-2",
+    "company": "KubeOps Corp",
+    "jd": "Platform Engineer needed to build microservices in Golang and manage Kubernetes container orchestration clusters and CI/CD pipelines.",
+    "expected_gaps": ["Golang", "Kubernetes", "CI/CD"]
+  },
+  {
+    "id": "GAP-TEST-3",
+    "company": "WebScale Labs",
+    "jd": "Full Stack Engineer needed. Required: TypeScript, Next.js, Prisma ORM, GraphQL APIs, and Stripe payment integration.",
+    "expected_gaps": ["TypeScript", "Next.js", "Prisma ORM", "GraphQL", "Stripe"]
+  },
+  {
+    "id": "GAP-TEST-4",
+    "company": "DataStream FinTech",
+    "jd": "High-frequency trading engineer. Experience with Elixir, Haskell functional programming, and Observability dashboards in Prometheus and Grafana.",
+    "expected_gaps": ["Elixir", "Haskell", "Observability"]
+  },
+  {
+    "id": "GAP-TEST-5",
+    "company": "Enterprise Services Inc",
+    "jd": "Node.js Backend Developer. Required: Jest/Mocha/PyTest unit testing framework mastery and GCP Cloud deployment experience.",
+    "expected_gaps": ["Jest/Mocha/PyTest", "GCP"]
+  }
+]

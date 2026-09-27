@@ -1,0 +1,10 @@
+CloudTech - Senior AWS Cloud & DevOps Engineer
+
+About the Role:
+We are seeking an experienced Cloud Engineer to manage our Amazon Web Services (AWS) cloud infrastructure and Kubernetes container clusters.
+
+Requirements:
+- 3+ years experience with AWS (EC2, S3, CloudWatch, Lambda, CloudFront).
+- Kubernetes (K8s) container orchestration and Helm chart management.
+- TypeScript for writing serverless Next.js web applications.
+- Golang microservices and CI/CD pipeline automation.

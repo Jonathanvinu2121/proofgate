@@ -1,0 +1,15 @@
+Decentro - Backend Engineer (Node.js / Python / Database Optimization)
+
+About the Role:
+We are looking for a high-performing Backend Developer to join our core engineering team. You will be responsible for building high-throughput RESTful APIs, optimizing PostgreSQL query performance, designing real-time order processing systems, and building resilient microservices.
+
+Responsibilities:
+- Design and ship RESTful APIs connecting frontend applications with Node.js/Python backend microservices.
+- Optimize slow PostgreSQL queries and design schema indexing for low-latency transaction processing.
+- Build real-time WebSocket communication channels with high concurrency.
+- Architect rate limiting, JWT dynamic routing, and API gateway security patterns.
+
+Qualifications:
+- B.Tech in Computer Science or related field.
+- Proficiency in Node.js, Express.js, Python, FastAPI, PostgreSQL, MongoDB, Redis, and Docker.
+- Experience with real-time systems, concurrency control, and logical timestamps is a strong plus.

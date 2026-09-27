@@ -1,0 +1,77 @@
+[
+  {
+    "id": "JD-01",
+    "query": "Looking for a Backend Developer experienced in building high-throughput RESTful APIs, Node.js, and integrating React frontends.",
+    "expected_chunk_ids": ["EXP-1", "EXP-4", "PROJ-2"]
+  },
+  {
+    "id": "JD-02",
+    "query": "Backend engineer needed for PostgreSQL database query performance tuning, indexing, schema restructuring, and logging layer design.",
+    "expected_chunk_ids": ["EXP-2", "PROJ-1"]
+  },
+  {
+    "id": "JD-03",
+    "query": "Seeking a developer who has built and deployed live production real-time POS systems processing daily transactions with zero downtime.",
+    "expected_chunk_ids": ["EXP-3", "PROJ-1"]
+  },
+  {
+    "id": "JD-04",
+    "query": "Full-stack developer with React, Node.js, and real-time WebSockets experience handling 50+ concurrent socket connections.",
+    "expected_chunk_ids": ["EXP-4", "PROJ-1"]
+  },
+  {
+    "id": "JD-05",
+    "query": "System architect with dual-database experience (PostgreSQL for ACID compliance, MongoDB for document storage) and logical Lamport timestamps for concurrency race conditions.",
+    "expected_chunk_ids": ["PROJ-1", "EXP-2"]
+  },
+  {
+    "id": "JD-06",
+    "query": "API Gateway Developer with Redis token bucket sliding window rate limiting, dynamic JWT auth routing, and multi-tenant traffic isolation.",
+    "expected_chunk_ids": ["PROJ-2"]
+  },
+  {
+    "id": "JD-07",
+    "query": "Python ML Engineer with FastAPI microservices, XGBoost anomaly detection, asynchronous inference, and Twilio alert pipelines.",
+    "expected_chunk_ids": ["PROJ-3"]
+  },
+  {
+    "id": "JD-08",
+    "query": "Hackathon finalist or competitive programmer with strong Data Structures and Algorithms background in Java and LeetCode.",
+    "expected_chunk_ids": ["ACH-1", "ACH-2", "ACH-3"]
+  },
+  {
+    "id": "JD-09",
+    "query": "AWS Cloud Architect needed to design EC2, S3, ECS, and Lambda infrastructure in cloud environment.",
+    "expected_chunk_ids": ["GAP-AWS"]
+  },
+  {
+    "id": "JD-10",
+    "query": "TypeScript Senior Engineer to write strictly typed React components and Node.js backends with Prisma ORM.",
+    "expected_chunk_ids": ["GAP-TS", "GAP-PRISMA"]
+  },
+  {
+    "id": "JD-11",
+    "query": "DevOps Engineer to manage Kubernetes clusters, Helm charts, and CI/CD pipelines in GCP cloud.",
+    "expected_chunk_ids": ["GAP-K8S", "GAP-GCP", "GAP-CICD"]
+  },
+  {
+    "id": "JD-12",
+    "query": "Golang Backend Developer to build high-concurrency microservices using Go channels and Elixir OTP actors.",
+    "expected_chunk_ids": ["GAP-GOLANG", "GAP-ELIXIR"]
+  },
+  {
+    "id": "JD-13",
+    "query": "Full-stack GraphQL engineer using Next.js 14 server components and Stripe payment gateway integration.",
+    "expected_chunk_ids": ["GAP-NEXT", "GAP-GRAPHQL", "GAP-STRIPE"]
+  },
+  {
+    "id": "JD-14",
+    "query": "Site Reliability Engineer (SRE) to setup observability dashboards in Prometheus, Grafana, and OpenTelemetry.",
+    "expected_chunk_ids": ["GAP-OBSERVABILITY"]
+  },
+  {
+    "id": "JD-15",
+    "query": "Open Source contributor experienced with Docker containerization, Git workflows, Postman testing, and Selenium web automation.",
+    "expected_chunk_ids": ["ACH-4", "PROJ-1", "EXP-1"]
+  }
+]

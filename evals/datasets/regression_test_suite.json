@@ -1,0 +1,114 @@
+[
+  {
+    "id": "REG-01",
+    "description": "Standard Node.js/PostgreSQL JD",
+    "jd": "Backend developer with Node.js, Express, PostgreSQL query optimization, and REST API experience.",
+    "should_pass_grounding": true,
+    "forbidden_claims": ["AWS", "Golang", "TypeScript"]
+  },
+  {
+    "id": "REG-02",
+    "description": "Python FastAPI microservices JD",
+    "jd": "Python microservices engineer with FastAPI, React, and anomaly detection experience.",
+    "should_pass_grounding": true,
+    "forbidden_claims": ["Kubernetes", "Azure"]
+  },
+  {
+    "id": "REG-03",
+    "description": "Real-time WebSockets & POS system JD",
+    "jd": "Real-time systems developer with WebSocket, POS system, and high-concurrency experience.",
+    "should_pass_grounding": true,
+    "forbidden_claims": ["Stripe", "GraphQL"]
+  },
+  {
+    "id": "REG-04",
+    "description": "Adversarial: JD asks for Golang backend (Candidate has Java/Node.js)",
+    "jd": "Senior Golang developer needed to build concurrent Go microservices.",
+    "should_pass_grounding": true,
+    "forbidden_claims": ["Golang"],
+    "must_flag_gap": "Golang"
+  },
+  {
+    "id": "REG-05",
+    "description": "Adversarial: JD asks for AWS Cloud Infrastructure (Candidate has no AWS)",
+    "jd": "AWS Solutions Architect with EC2, Lambda, S3, and CloudFront experience.",
+    "should_pass_grounding": true,
+    "forbidden_claims": ["AWS"],
+    "must_flag_gap": "AWS"
+  },
+  {
+    "id": "REG-06",
+    "description": "Adversarial: JD asks for TypeScript & Next.js",
+    "jd": "Full stack engineer proficient in TypeScript, Next.js 14, and Prisma ORM.",
+    "should_pass_grounding": true,
+    "forbidden_claims": ["TypeScript", "Next.js", "Prisma ORM"],
+    "must_flag_gap": "TypeScript"
+  },
+  {
+    "id": "REG-07",
+    "description": "Adversarial: Artificial hallucination injection (Testing Guardrail Halt)",
+    "jd": "Backend engineer position.",
+    "test_hallucination_injection": "Architected multi-region AWS Lambda microservices serving 1M active users.",
+    "should_halt_guardrail": true
+  },
+  {
+    "id": "REG-08",
+    "description": "API Gateway & Distributed Systems JD",
+    "jd": "API Gateway engineer with Redis rate limiting, JWT dynamic routing, and multi-tenancy experience.",
+    "should_pass_grounding": true,
+    "forbidden_claims": ["Prometheus", "Elixir"]
+  },
+  {
+    "id": "REG-09",
+    "description": "Hackathon & Competitive Programming JD",
+    "jd": "Competitive programmer with Java DSA background and National Innovation Hackathon achievements.",
+    "should_pass_grounding": true,
+    "forbidden_claims": ["Haskell"]
+  },
+  {
+    "id": "REG-10",
+    "description": "Open Source & Developer Tooling JD",
+    "jd": "Developer familiar with Git, GitHub, Docker, Postman, and public API contributions.",
+    "should_pass_grounding": true,
+    "forbidden_claims": ["CI/CD"]
+  },
+  {
+    "id": "REG-11",
+    "description": "Adversarial: JD asks for Kubernetes orchestration",
+    "jd": "Kubernetes cluster administrator managing Helm deployments.",
+    "should_pass_grounding": true,
+    "forbidden_claims": ["Kubernetes"],
+    "must_flag_gap": "Kubernetes"
+  },
+  {
+    "id": "REG-12",
+    "description": "Adversarial: JD asks for Elixir/OTP actors",
+    "jd": "Elixir developer building fault-tolerant OTP supervision trees.",
+    "should_pass_grounding": true,
+    "forbidden_claims": ["Elixir"],
+    "must_flag_gap": "Elixir"
+  },
+  {
+    "id": "REG-13",
+    "description": "Adversarial: JD asks for GraphQL API server",
+    "jd": "GraphQL backend developer implementing Apollo schema federation.",
+    "should_pass_grounding": true,
+    "forbidden_claims": ["GraphQL"],
+    "must_flag_gap": "GraphQL"
+  },
+  {
+    "id": "REG-14",
+    "description": "Adversarial: JD asks for Stripe payment gateways",
+    "jd": "Fintech software engineer integrating Stripe Connect billing.",
+    "should_pass_grounding": true,
+    "forbidden_claims": ["Stripe"],
+    "must_flag_gap": "Stripe"
+  },
+  {
+    "id": "REG-15",
+    "description": "Adversarial: Artificial hallucination injection 2 (Testing Guardrail Halt)",
+    "jd": "Backend engineer position.",
+    "test_hallucination_injection": "Integrated Stripe payment gateway processing $500k monthly transactions in production.",
+    "should_halt_guardrail": true
+  }
+]
