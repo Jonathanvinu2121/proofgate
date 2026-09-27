@@ -16,7 +16,7 @@ public final class MarkdownReader {
     private MarkdownReader() {
     }
 
-    /** Returns content lines tagged with their nearest heading. Headings and rules are not returned. */
+    /** Returns headings and content lines, each tagged with its nearest heading. Horizontal rules are dropped. */
     public static List<MarkdownLine> read(String markdown) {
         List<MarkdownLine> lines = new ArrayList<>();
         String section = "";
@@ -29,11 +29,14 @@ public final class MarkdownReader {
             Matcher heading = HEADING.matcher(line);
             if (heading.matches()) {
                 section = clean(heading.group(2));
+                if (!section.isEmpty()) {
+                    lines.add(new MarkdownLine(i + 1, section, section, true));
+                }
                 continue;
             }
             String text = clean(LIST_MARKER.matcher(line).replaceFirst(""));
             if (!text.isEmpty()) {
-                lines.add(new MarkdownLine(i + 1, section, text));
+                lines.add(new MarkdownLine(i + 1, section, text, false));
             }
         }
         return lines;

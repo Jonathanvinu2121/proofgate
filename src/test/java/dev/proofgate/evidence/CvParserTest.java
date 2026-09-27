@@ -21,7 +21,9 @@ class CvParserTest {
         List<EvidenceChunk> chunks = CvParser.parse(markdown);
 
         assertThat(chunks).extracting(EvidenceChunk::id)
-                .containsExactly("cv-1", "backend-developer-contract-1", "backend-developer-contract-2", "skills-1");
-        assertThat(chunks.get(2).lineNumber()).isEqualTo(4);
+                .containsExactly("cv-1", "backend-developer-contract-title", "backend-developer-contract-1",
+                        "backend-developer-contract-2", "skills-title", "skills-1");
+        assertThat(chunks.get(1).text()).isEqualTo("Backend Developer (Contract), Northwind Labs, Oct 2025");
+        assertThat(chunks.get(3).lineNumber()).isEqualTo(4);
     }
 }

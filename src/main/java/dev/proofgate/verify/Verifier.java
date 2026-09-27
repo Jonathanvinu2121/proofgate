@@ -29,7 +29,7 @@ public final class Verifier {
 
     private static final Pattern LEADERSHIP = Pattern.compile(
             "(?i)\\b(led|lead|leading|managed|managing|headed|spearheaded|mentored|mentoring|supervised"
-                    + "|directed|oversaw|team of|founded|co-founded)\\b");
+                    + "|directed|oversaw|team of|founded|co-founded|founder|co-founder)\\b");
 
     private record IndexedChunk(EvidenceChunk chunk, Set<Fact> facts, Set<String> words) {
     }
