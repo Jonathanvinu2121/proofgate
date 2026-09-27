@@ -51,6 +51,11 @@ Input: `cv.md` (source of truth) + a tailored CV / cover letter. Output: per-cla
   - [ ] Section-aware evidence: treat a heading + its bullets as one unit, so a claim combining a role's
         title, dates and bullet facts isn't sent to review (4 of 28 claims on the real resume, all correct)
 - [ ] Read `.tex` output directly (career-ops `/latex`, resume builders) instead of needing a markdown copy
+- [ ] Prose mode for cover letters / outreach emails (found on real emails, 2026-09-27; career-ops' gate
+      has the same false positives):
+  - Negation: "I haven't set up CI/CD yet" is a disclosed gap, not a CI/CD claim
+  - Quoted requirements: "the role asks for 0–2 years" describes the job, not the candidate
+  - Non-claims: greetings, sentences about the employer, and [bracketed notes] should not count as claims
   - [ ] Semantic check (LLM judge via Anthropic Java SDK) for NEEDS_REVIEW claims: SUPPORTED / EMBELLISHED / UNSUPPORTED
   - [ ] Mock judge for offline tests
 - [x] CLI (picocli): `verify --cv cv.md --output tailored.md` → report, exit 1 on unsupported claims
