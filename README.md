@@ -3,9 +3,14 @@
 Blocks unsupported claims in AI-tailored CVs and cover letters by tracing every claim back to evidence.
 
 AI job-search tools like [career-ops](https://github.com/career-ops-hq/career-ops) rewrite your CV for each role.
-Their "never fabricate" rule lives in the prompt; nothing enforces it. ProofGate is the enforcing gate:
-it splits generated output into claims, matches each one to a line of your source CV, and blocks the
-document if a claim contains a number, date or technology your CV doesn't back.
+career-ops ships a document-level fact gate (`verify-cv-facts.mjs`) that checks whether numbers and named
+facts appear *somewhere* in your CV. ProofGate works per claim: it matches each claim to the specific CV
+line that backs it, blocks numbers, dates and technologies your CV doesn't contain, and sends facts
+combined across unrelated entries or unstated leadership to review.
+
+On ProofGate's 50 labelled cases, career-ops' gate catches 25.0% of fabrications and ProofGate 96.4%,
+both with 0% false blocks (`node evals/compare-career-ops.mjs`). Caveat: the cases were written alongside
+ProofGate, so they favour it; real career-ops output is the fair test.
 
 ```
 [PASS  ] line 6   Reduced PostgreSQL query latency from ~600ms to under 100ms via targeted indexing.

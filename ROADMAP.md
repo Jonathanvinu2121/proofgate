@@ -5,9 +5,14 @@
 A Java tool that plugs into [career-ops](https://github.com/career-ops-hq/career-ops) and makes sure
 every claim in a tailored CV / cover letter is backed by real evidence — blocking anything that isn't.
 
-career-ops' own README admits: *"It reformulates your CV; it must never fabricate it. Today that rule
-lives in the prompts, not yet in an enforcing gate."* This project is that enforcing gate, plus an
-evidence base (your repos, projects, certs) and an upskilling loop that turns skill gaps into citable proof.
+career-ops' README says its no-fabrication rule "lives in the prompts, not yet in an enforcing gate",
+but the code (v1.34.0) does ship a document-level gate, `verify-cv-facts.mjs`, run before PDF and cover
+letter generation. It checks whether each fact exists anywhere in `cv.md`; it does not cite sources,
+catch facts mixed across entries, or flag inflated scope. On the same 50 cases it catches 25.0% vs
+ProofGate's 96.4% (`evals/compare-career-ops.mjs`, 2026-09-27; cases favour ProofGate).
+This project is a per-claim, citation-backed gate, plus an evidence base (your repos, projects, certs)
+and an upskilling loop that turns skill gaps into citable proof. A realistic end state is contributing
+the checks career-ops lacks upstream, with the benchmark as evidence.
 
 **Why Java:** target is SDE roles; the project doubles as proof of Java / Spring Boot backend skill.
 
@@ -30,7 +35,8 @@ If you can't name the number a change will improve, it's not the next thing to d
 ## Step 0 — Foundation
 - [x] `git init`, `.gitignore`, first commit of current Python prototype (moved to `python-prototype/`)
 - [x] Build tool: Maven wrapper (3.9.16), Java 21 target, JUnit 6 + AssertJ
-- [ ] Install career-ops locally, run it on 3–5 real SDE JDs, save its tailored CVs as eval inputs
+- [x] Install career-ops locally (`../career-ops`, v1.34.0) with the master CV, profile and fact-gate config
+- [ ] Run it on 3–5 real SDE JDs, save its tailored CVs as eval inputs
 - **Done when:** `mvn test` runs green and there is real career-ops output to test against.
 
 ## Step 1 — Standalone verifier (the core)
