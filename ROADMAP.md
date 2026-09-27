@@ -42,6 +42,9 @@ Input: `cv.md` (source of truth) + a tailored CV / cover letter. Output: per-cla
   - [x] Hard-fact check (deterministic): numbers, %, years, technologies must appear in evidence; plus
         wording-overlap and unstated-leadership checks
   - [ ] Company / employer names as hard facts
+  - [ ] Section-aware evidence: treat a heading + its bullets as one unit, so a claim combining a role's
+        title, dates and bullet facts isn't sent to review (4 of 28 claims on the real resume, all correct)
+- [ ] Read `.tex` output directly (career-ops `/latex`, resume builders) instead of needing a markdown copy
   - [ ] Semantic check (LLM judge via Anthropic Java SDK) for NEEDS_REVIEW claims: SUPPORTED / EMBELLISHED / UNSUPPORTED
   - [ ] Mock judge for offline tests
 - [x] CLI (picocli): `verify --cv cv.md --output tailored.md` → report, exit 1 on unsupported claims
