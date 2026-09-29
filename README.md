@@ -46,7 +46,7 @@ so it can gate a pipeline before PDF generation.
 
 ## Measuring it
 
-`evals/cases.tsv` holds labelled faithful rewrites and fabrications (fake metrics, invented tech,
+`evals/fixtures/cv.md` is a fictional candidate's CV used as evidence. `evals/cases.tsv` holds labelled faithful rewrites and fabrications (fake metrics, invented tech,
 shifted dates, scope inflation, mixed facts, vague claims, fake employers). `eval` scores the verifier
 and appends to `evals/history.csv`, so every change is judged by numbers:
 
